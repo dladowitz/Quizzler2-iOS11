@@ -11,6 +11,10 @@
 		633646C11B8C657400FF45E2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633646C01B8C657400FF45E2 /* ViewController.swift */; };
 		633646C61B8C657400FF45E2 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 633646C51B8C657400FF45E2 /* Images.xcassets */; };
 		633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 633646C71B8C657400FF45E2 /* LaunchScreen.xib */; };
+		9946AED1207D39280028E1C1 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 9946AECF207D39280028E1C1 /* ProgressHUD.m */; };
+		9946AED2207D39280028E1C1 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9946AED0207D39280028E1C1 /* ProgressHUD.bundle */; };
+		9946AED4207D399B0028E1C1 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9946AED3207D399B0028E1C1 /* Question.swift */; };
+		9946AED6207D39A20028E1C1 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9946AED5207D39A20028E1C1 /* QuestionBank.swift */; };
 		ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 633646C21B8C657400FF45E2 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -22,6 +26,12 @@
 		633646C31B8C657400FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		633646C51B8C657400FF45E2 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		633646C81B8C657400FF45E2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		9946AECD207D39270028E1C1 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
+		9946AECE207D39280028E1C1 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		9946AECF207D39280028E1C1 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		9946AED0207D39280028E1C1 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		9946AED3207D399B0028E1C1 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		9946AED5207D39A20028E1C1 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,8 +75,12 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				9946AED0207D39280028E1C1 /* ProgressHUD.bundle */,
+				9946AECE207D39280028E1C1 /* ProgressHUD.h */,
+				9946AECF207D39280028E1C1 /* ProgressHUD.m */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
+				9946AECD207D39270028E1C1 /* Quizzler-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -83,6 +97,8 @@
 		EBB1C72C1B946C530011F5C3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9946AED3207D399B0028E1C1 /* Question.swift */,
+				9946AED5207D39A20028E1C1 /* QuestionBank.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -128,7 +144,7 @@
 				TargetAttributes = {
 					633646B81B8C657400FF45E2 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -155,6 +171,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9946AED2207D39280028E1C1 /* ProgressHUD.bundle in Resources */,
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
@@ -168,7 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9946AED1207D39280028E1C1 /* ProgressHUD.m in Sources */,
+				9946AED4207D399B0028E1C1 /* Question.swift in Sources */,
 				633646C11B8C657400FF45E2 /* ViewController.swift in Sources */,
+				9946AED6207D39A20028E1C1 /* QuestionBank.swift in Sources */,
 				633646BF1B8C657400FF45E2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +324,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -321,7 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.londonappbrewery.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
